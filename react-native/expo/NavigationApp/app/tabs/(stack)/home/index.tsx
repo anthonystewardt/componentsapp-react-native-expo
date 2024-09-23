@@ -9,14 +9,14 @@ const HomeScreen = () => {
           <Text className='ml-5 text-3xl font-semibold text-blue-400 font-raleway-black'>HomeScreen</Text>
         </View>
 
-        <Link href="/profile" asChild>
+        <Link href="/tabs/(stack)/profile" asChild>
           <CustomButton title='Profile Screen' color='secondary' />
         </Link>
 
 
-        <CustomButton variant="ghost" title='Products Screen' color='secondary' onPress={() => router.push('/products')} />
+        <CustomButton variant="ghost" title='Products Screen' color='secondary' onPress={() => router.push('/tabs/(stack)/products')} />
 
-        <CustomButton variant="outline" title='Products Screen' color='secondary' onPress={() => router.push('/products')} />
+        <CustomButton variant="outline" title='Settings Screen' color='secondary' onPress={() => router.push('/tabs/(stack)/Settings')} />
 
         {/* <Pressable className='py-2 mt-3 text-center rounded-full bg-primary'>
           <Link href={"/products"} className='ml-5 text-3xl font-semibold text-center text-white/95 font-raleway-black'>Products Screen</Link>

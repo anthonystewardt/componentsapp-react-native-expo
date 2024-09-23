@@ -6,7 +6,7 @@ import { SafeAreaView } from 'react-native-safe-area-context'
 const HomeScreen = () => {
   return (
     // <Redirect href="/(stack)/home" />
-    <Redirect href="/tabs/home" />
+    <Redirect href="/drawer" />
     // <SafeAreaView  >
     //   <View className='px-4'>
     //     <View className='mt-3 bg-primary'>
