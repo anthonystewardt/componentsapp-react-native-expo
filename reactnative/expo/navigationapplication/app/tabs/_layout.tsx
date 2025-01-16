@@ -1,9 +1,20 @@
-import { FontAwesome } from '@expo/vector-icons'
+import { FontAwesome, Ionicons } from '@expo/vector-icons'
 import { Tabs } from 'expo-router'
 import { View, Text } from 'react-native'
 const TabLayout = () => {
   return (
-    <Tabs screenOptions={{ tabBarActiveTintColor: 'blue' }}>
+    <Tabs screenOptions={{
+      tabBarActiveTintColor: 'blue',
+      headerShown: false
+
+    }}>
+      <Tabs.Screen
+        name="(stack)"
+        options={{
+          title: 'Stack',
+          tabBarIcon: ({ color }) => <Ionicons size={28} name="person-outline" color={color} />,
+        }}
+      />
       <Tabs.Screen
         name="home/index"
         options={{

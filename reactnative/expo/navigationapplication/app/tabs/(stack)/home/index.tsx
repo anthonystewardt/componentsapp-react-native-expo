@@ -17,9 +17,9 @@ const HomeScreen = () => {
         </Link> */}
 
         <View className='flex-col gap-2'>
-          <CustomButton onPress={() => router.push("/products")} color='primary'>Products</CustomButton>
-          <CustomButton onPress={() => router.push("/profile")} color='secondary'>Profile</CustomButton>
-          <CustomButton onPress={() => router.push("/settings")} color='tertiary'>Settings</CustomButton>
+          <CustomButton onPress={() => router.push("/tabs/(stack)/products")} color='primary'>Products</CustomButton>
+          <CustomButton onPress={() => router.push("/tabs/(stack)/profile")} color='secondary'>Profile</CustomButton>
+          <CustomButton onPress={() => router.push("/tabs/(stack)/settings")} color='tertiary'>Settings</CustomButton>
         </View>
         {/* <Link className='mt-3 text-lg dark:text-gray-200' href="/products">Products</Link>
         <Link className='mt-3 text-lg dark:text-gray-200' href="/profile">Profile</Link>
