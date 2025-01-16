@@ -8,6 +8,7 @@ const DrawerLayout = () => {
     <Drawer
       initialRouteName="profile/index"
       screenOptions={{
+        // headerShown: false,
         overlayColor: 'rgba(0,0,0,0.4)',
         drawerActiveTintColor: 'indigo',
         drawerInactiveTintColor: 'gray',
@@ -70,6 +71,19 @@ const DrawerLayout = () => {
           title: 'calendario',
           drawerIcon: ({ color, size }) => (
             <Ionicons name="calendar" size={size} color={color} />
+          ),
+        }}
+      />
+
+      <Drawer.Screen
+        name="(tabs)" // This is the name of the page and must match the url from root
+
+        options={{
+          drawerLabel: 'Tabs + Stack',
+          headerShown: false,
+          title: 'Tabs + Stack',
+          drawerIcon: ({ color, size }) => (
+            <Ionicons name="megaphone" size={size} color={color} />
           ),
         }}
       />

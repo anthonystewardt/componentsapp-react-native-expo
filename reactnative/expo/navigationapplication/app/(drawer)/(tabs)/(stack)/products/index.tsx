@@ -27,7 +27,7 @@ const ProductScreen = () => {
                 >
                   <Text className='text-lg text-gray-400'>{item.price}</Text>
 
-                  <Link href={`/tabs/(stack)/products/${item.id}`} className='text-blue-500'>Ver detalles</Link>
+                  <Link href={`/products/${item.id}`} className='text-blue-500'>Ver detalles</Link>
                 </View>
 
               </View>

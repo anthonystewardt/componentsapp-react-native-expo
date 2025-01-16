@@ -4,7 +4,7 @@ import { View, Text, SafeAreaView } from 'react-native'
 
 const HomeScreen = () => {
   return (
-    <Redirect href={"/drawer/profile"} />
+    <Redirect href={"/home"} />
   )
 }
 export default HomeScreen
